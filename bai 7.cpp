@@ -10,8 +10,9 @@ void fibo(int n){
    for(int i=2;i<=n;i++){
         f[i] = f[i-2] + f[i-1];
    }
-   for(int j=0;j<=n;j++)
+   for(int j=0;j<=n;j++){
    cout << f[j] << setw(4);
+   }
 }
 
 int main(){

@@ -10,12 +10,17 @@ int main(){
         cin >> a[i];
     }
     for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
+            int kt=1; //gia su khac nhau
+        for(int j=0;j<i;j++){
             if(a[i]==a[j]){
-                dem++;
+                kt=0;//truong hop bang nhau
+                break;
             }
         }
+            if (kt==1)
+                dem++;
+
     }
-    cout << "So luong gia tri khac nhau trong mang la: " << dem;
+    cout<<"So gia tri khac nhau la:"<<dem;
     return 0;
 }
